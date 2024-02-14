@@ -1,0 +1,320 @@
+/*
+
+COLORS:
+
+PURPLE: #3E24A5
+VIOLET: #7E24A5
+BLUE: #244BA5
+
+OR: 
+
+WHEAT: #f8d7b9
+PALE VIOLET RED: #d46988
+DARK SLATE GRAY: #2c2d4d
+CADET BLUE: #87b2b8
+DIM GRAY: #824A71
+
+OR: 
+
+DARK-GRAY: #0D1F23
+DARK-GREEN: #132E35
+LIGHT-GREEN: #2D4A53
+LIGHT-BLUE: #69818D
+WHITE: #AFB3B7
+GRAY: #5A636A
+
+*/
+
+@import url("https://fonts.googleapis.com/css2?family=Nova+Mono&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap");
+/*
+font-family: 'Nova Mono', monospace;
+font-family: 'Lato', sans-serif;
+ font-family: "Dosis", sans-serif;
+*/
+
+html,
+body {
+  background-color: #070607;
+  font-family: "Dosis", sans-serif;
+  color: #afb3b7;
+}
+
+/*------------------------------------------------------------NAVBAR -------------------------------------------------------------*/
+
+nav {
+  font-family: "Nova Mono", monospace;
+  background-color: #070607;
+}
+
+nav * h2 {
+  color: #afb3b7;
+}
+
+#logoContainer {
+  width: 120px;
+  height: auto;
+}
+
+#logoContainer img {
+  width: 120px;
+  height: auto;
+}
+
+/*------------------------------------------------------------ HOME PAGE -------------------------------------------------------------*/
+#homePage {
+  width: 100%;
+}
+
+#homeConent {
+  width: 90%;
+}
+
+/*----------------  ASIDE CSS ----------------------*/
+
+#asideContent {
+  width: 10%;
+  height: 100vh;
+  position: fixed;
+  right: 0;
+}
+
+.sectionOne {
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  border: none;
+  border-radius: 45%;
+}
+
+.sectionOne::hover {
+  width: 30px;
+  height: 30px;
+  background-color: white;
+  border: none;
+  border-radius: 45%;
+}
+
+.sectionTwo {
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  border: none;
+  border-radius: 45%;
+}
+
+.sectionThree {
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  border: none;
+  border-radius: 45%;
+}
+
+.sectionFour {
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  border: none;
+  border-radius: 45%;
+}
+
+/*----------------  SECTIONS CONTENT CSS ----------------------*/
+/*
+OLD welcome section background image
+background-image: url("/assets/grayPlanet.jpg");
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+*/
+
+/*  TITLE TEXTS FOR EACH SECTION*/
+
+#welcomeText h1,
+#exoplanetsSection h1,
+#exoplanetDetectionSection h1,
+#xoplanetLifeSection h1 {
+  font-family: "Nova Mono", monospace;
+  font-size: 40px;
+  color: #afb3b7;
+}
+
+@media screen and (max-width: 640px) {
+  #welcomeText h1,
+  #exoplanetsSection h1,
+  #exoplanetDetectionSection h1,
+  #xoplanetLifeSection h1 {
+    font-size: 26px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  #welcomeText h1,
+  #exoplanetsSection h1,
+  #exoplanetDetectionSection h1,
+  #xoplanetLifeSection h1 {
+    font-size: 20px;
+  }
+}
+
+/*  SETTING WELCOME TEXT FOR FULL VH*/
+
+#welcomeText {
+  height: 100vh;
+}
+
+/*  SETTING IMAGE SIZE FOR EACH SECTION */
+
+#sectionTwoImageContainer {
+  background-image: url("/assets/grayPlanet.jpg");
+  width: 100%;
+  height: 600px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#sectionThreeImageContainer {
+  background-image: url("/assets/transitExoplanet.jpg");
+  width: 100%;
+  height: 400px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#sectionFourImageContainer {
+  background-image: url("/assets/exoplanet.jpg");
+  width: 100%;
+  height: 400px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/*  SET IMAGE SIZE FOR SCREEN <400px FOR RESPONSIVENESS */
+
+@media screen and (max-width: 400px) {
+  #sectionTwoImageContainer,
+  #sectionThreeImageContainer,
+  #sectionFourImageContainer {
+    height: 300px;
+  }
+}
+
+/*  SET THE EXPLANATION TEXT TO A LIGHT FONT-WEIGHT */
+#exoplanetsExplaination,
+#findingExoplanetsExplanation,
+#lifeExoplanetsExplanation {
+  font-weight: 300;
+  color: #afb3b7;
+}
+
+@media screen and (max-width: 640px) {
+  #exoplanetsExplaination,
+  #findingExoplanetsExplanation,
+  #lifeExoplanetsExplanation {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  #exoplanetsExplaination,
+  #findingExoplanetsExplanation,
+  #lifeExoplanetsExplanation {
+    font-size: 18px;
+  }
+}
+
+/*  SET THE EXPLANATION'S CATEGORIES TITLE TO A BOLD FONT-WEIGHT */
+#exoplanetTypes h3,
+#exoplanetDetection h3 {
+  font-weight: 700;
+}
+
+/*  SETS THE ENDING IMAGE TO THE LEFT-BOTTOM OF THE PAGE */
+#homeEndImageContainer {
+  background-image: url("/assets/grayPlanet2.jpg");
+  width: 100%;
+  height: 700px;
+  background-size: contain;
+  background-position: right bottom;
+  background-repeat: no-repeat;
+  transform: scaleX(-1);
+}
+
+@media screen and (max-width: 640px) {
+  #homeEndImageContainer {
+    background-image: url("/assets/grayPlanet2.jpg");
+    width: 100%;
+    height: 400px;
+    background-size: contain;
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    transform: scaleX(-1);
+  }
+}
+
+@media screen and (max-width: 400px) {
+  #homeEndImageContainer {
+    background-image: url("/assets/grayPlanet2.jpg");
+    width: 100%;
+    height: 200px;
+    background-size: contain;
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    transform: scaleX(-1);
+  }
+}
+
+/*------------------------------------------------------------ EXOPLANETS LIST -------------------------------------------------------------*/
+
+/*  LOADING DOTS WHILE EXOPLANETS LIST IS BEING GENERATED */
+@keyframes appearDisappear {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.introTextDotOne {
+  animation-name: appearDisappear;
+  animation-duration: 3s;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+}
+
+.introTextDotTwo {
+  animation-name: appearDisappear;
+  animation-duration: 3s;
+  animation-delay: 0.5s;
+  animation-iteration-count: infinite;
+}
+
+.introTextDotThree {
+  animation-name: appearDisappear;
+  animation-duration: 3s;
+  animation-delay: 1s;
+  animation-iteration-count: infinite;
+}
+
+/*------------------------------------------------------------ FOOTER -------------------------------------------------------------*/
+
+footer {
+  background-color: #2d4a53;
+  width: 100%;
+  height: 20vh;
+}
+
+footer img {
+  width: 120px;
+  height: auto;
+}
