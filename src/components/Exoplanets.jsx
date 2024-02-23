@@ -16,6 +16,10 @@ function Exoplanets() {
       <br />
       <h1 className="text-center">Exoplanet Data</h1>
       <h1>Here the data from the API will be displayed. </h1>
+      <h1>
+        Adding some more text as I think on how to finish developing this web
+        app
+      </h1>
 
       <h2>
         Loading<span className="introTextDotOne">.</span>
