@@ -20,6 +20,10 @@ function Exoplanets() {
         Adding some more text as I think on how to finish developing this web
         app
       </h1>
+      <h1>
+        Table should have a search function and filter function as well to look
+        exactly at some of the information.
+      </h1>
 
       <h2>
         Loading<span className="introTextDotOne">.</span>
