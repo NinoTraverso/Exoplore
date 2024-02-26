@@ -1,8 +1,31 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 
-/* , { useState, useEffect } */
+/*
 
-/*"https://exoplanetarchive.ipac.caltech.edu/cgi-bin/nstedAPI/nph-nstedAPI?table=cumulative&format=json" */
+https://builtin.com/software-engineering-perspectives/react-api
+
+https://www.freecodecamp.org/news/how-to-fetch-api-data-in-react/
+
+*/
+
+function ExoplanetsTables() {
+  const [data, setData] = useState(null);
+
+  useEffect(() => {
+    fetch(
+      "https://exoplanetarchive.ipac.caltech.edu/cgi-bin/nstedAPI/nph-nstedAPI?table=cumulative&format=json"
+    )
+      .then((response) => response.json())
+      .then((json) => setData(json))
+      .then((error) => console.error(error));
+  }, []);
+
+  return (
+    <div>
+      {data ? <pre>{JSON.stringify(data, null, 2)}</pre> : "Loading..."}
+    </div>
+  );
+}
 
 function Exoplanets() {
   return (
@@ -29,6 +52,7 @@ function Exoplanets() {
         Loading<span className="introTextDotOne">.</span>
         <span className="introTextDotTwo">.</span>
         <span className="introTextDotThree">.</span>
+        {ExoplanetsTables}
       </h2>
     </div>
   );
