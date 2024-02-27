@@ -54,6 +54,9 @@ function Exoplanets() {
         <span className="introTextDotThree">.</span>
         {ExoplanetsTables}
       </h2>
+      <h2>
+        Just putting some text as I read the docs for using API with react
+      </h2>
     </div>
   );
 }
