@@ -54,6 +54,7 @@ function Exoplanets() {
         <span className="introTextDotThree">.</span>
         {ExoplanetsTables}
         <h1>{ExoplanetsTables.kepid}</h1>
+        <h1>Still seeing how to use APIs properly</h1>
       </h2>
       <h2>
         Just putting some text as I read the docs for using API with react
