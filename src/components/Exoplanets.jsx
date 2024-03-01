@@ -59,6 +59,7 @@ function Exoplanets() {
       <h2>
         Just putting some text as I read the docs for using API with react
       </h2>
+      <h1>Adding some more text</h1>
     </div>
   );
 }
