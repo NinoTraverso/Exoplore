@@ -40,26 +40,15 @@ function Exoplanets() {
       <h1 className="text-center">Exoplanet Data</h1>
       <h1>Here the data from the API will be displayed. </h1>
       <h1>
-        Adding some more text as I think on how to finish developing this web
-        app
-      </h1>
-      <h1>
         Table should have a search function and filter function as well to look
         exactly at some of the information.
       </h1>
-
-      <h2>
-        Loading<span className="introTextDotOne">.</span>
-        <span className="introTextDotTwo">.</span>
-        <span className="introTextDotThree">.</span>
-        {ExoplanetsTables}
-        <h1>{ExoplanetsTables.kepid}</h1>
-        <h1>Still seeing how to use APIs properly</h1>
-      </h2>
-      <h2>
-        Just putting some text as I read the docs for using API with react
-      </h2>
-      <h1>Adding some more text</h1>
+      <h1>Still need to cover API with react</h1>
+      Loading<span className="introTextDotOne">.</span>
+      <span className="introTextDotTwo">.</span>
+      <span className="introTextDotThree">.</span>
+      {ExoplanetsTables}
+      <h1>{ExoplanetsTables.kepid}</h1>
     </div>
   );
 }
