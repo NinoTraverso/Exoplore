@@ -45,6 +45,10 @@ function Exoplanets() {
       </h1>
       <h1>Still need to cover API with react</h1>
       <h1>Just adding some text</h1>
+      <h1>
+        Adding some more text as I complete other tasks before returning to the
+        project
+      </h1>
       Loading<span className="introTextDotOne">.</span>
       <span className="introTextDotTwo">.</span>
       <span className="introTextDotThree">.</span>
