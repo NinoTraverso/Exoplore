@@ -49,6 +49,10 @@ function Exoplanets() {
         Adding some more text as I complete other tasks before returning to the
         project
       </h1>
+      <h1>
+        Just adding some more text, will get on this project probably around
+        march 10
+      </h1>
       Loading<span className="introTextDotOne">.</span>
       <span className="introTextDotTwo">.</span>
       <span className="introTextDotThree">.</span>
