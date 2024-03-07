@@ -53,6 +53,7 @@ function Exoplanets() {
         Just adding some more text, will get on this project probably around
         march 10
       </h1>
+      <h1>Adding some more text</h1>
       Loading<span className="introTextDotOne">.</span>
       <span className="introTextDotTwo">.</span>
       <span className="introTextDotThree">.</span>
