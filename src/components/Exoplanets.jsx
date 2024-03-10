@@ -55,6 +55,7 @@ function Exoplanets() {
       </h1>
       <h1>Adding some more text</h1>
       <h1>Adding more text</h1>
+      <h1>Adding more text</h1>
       Loading<span className="introTextDotOne">.</span>
       <span className="introTextDotTwo">.</span>
       <span className="introTextDotThree">.</span>
