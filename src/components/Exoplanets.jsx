@@ -43,19 +43,6 @@ function Exoplanets() {
         Table should have a search function and filter function as well to look
         exactly at some of the information.
       </h1>
-      <h1>Still need to cover API with react</h1>
-      <h1>Just adding some text</h1>
-      <h1>
-        Adding some more text as I complete other tasks before returning to the
-        project
-      </h1>
-      <h1>
-        Just adding some more text, will get on this project probably around
-        march 10
-      </h1>
-      <h1>Adding some more text</h1>
-      <h1>Adding more text</h1>
-      <h1>Adding more text</h1>
       Loading<span className="introTextDotOne">.</span>
       <span className="introTextDotTwo">.</span>
       <span className="introTextDotThree">.</span>
