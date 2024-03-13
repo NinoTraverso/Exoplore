@@ -43,6 +43,7 @@ function Exoplanets() {
         Table should have a search function and filter function as well to look
         exactly at some of the information.
       </h1>
+      <h1>Just adding some text</h1>
       Loading<span className="introTextDotOne">.</span>
       <span className="introTextDotTwo">.</span>
       <span className="introTextDotThree">.</span>
