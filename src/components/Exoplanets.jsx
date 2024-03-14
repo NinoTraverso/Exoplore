@@ -44,6 +44,7 @@ function Exoplanets() {
         exactly at some of the information.
       </h1>
       <h1>Just adding some text</h1>
+      <h1>Adding more text</h1>
       Loading<span className="introTextDotOne">.</span>
       <span className="introTextDotTwo">.</span>
       <span className="introTextDotThree">.</span>
