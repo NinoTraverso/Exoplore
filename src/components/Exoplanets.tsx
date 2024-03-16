@@ -14,8 +14,8 @@ const BASE_URL =
   "https://exoplanetarchive.ipac.caltech.edu/cgi-bin/nstedAPI/nph-nstedAPI?table=cumulative&format=json";
 
 interface Table {
-  id: number;
-  name: string;
+  kepid: number;
+  kepoi_name: string;
 }
 
 function GettingExoTables() {
@@ -34,24 +34,26 @@ function GettingExoTables() {
       setIsLoading(true);
 
       try {
-        const response = await fetch(`${BASE_URL}/tables?page${page}`, {
+        const response = await fetch(`${BASE_URL}&page=${page}`, {
           signal: abortControllerRef.current?.signal,
         });
-        const tables = (await response.json()) as Table[];
-        setTables(tables);
-      } catch (e: any) {
-        if (e.name === "AbortError") {
+        if (!response.ok) {
+          throw new Error("Failed to fetch data");
+        }
+        const data = await response.json();
+        setTables(data);
+      } catch (error) {
+        if (error.name === "AbortError") {
           console.log("Aborted");
           return;
         }
-        setError(e);
+        setError(error);
       } finally {
         setIsLoading(false);
       }
     };
     fetchTables();
   }, [page]);
-
   if (error) {
     return <div>Something went wrong, reload the page.</div>;
   }
@@ -77,9 +79,15 @@ function GettingExoTables() {
       )}
       {!isLoading && (
         <ul>
-          {table.map((table) => (
-            <li key={table.id}>{table.name}</li>
-          ))}
+          {table && table.length > 0 && (
+            <ul>
+              {table.map((entry) => (
+                <li key={entry.kepid}>
+                  {entry.kepid} | {entry.kepoi_name}
+                </li>
+              ))}
+            </ul>
+          )}
         </ul>
       )}
     </div>
