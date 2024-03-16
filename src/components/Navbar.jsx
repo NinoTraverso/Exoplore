@@ -2,7 +2,7 @@ import React from "react";
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 
 import Home from "./Home";
-import Exoplanets from "./Exoplanets";
+import Exoplanets from "./Exoplanets.tsx";
 import Info from "./Info";
 
 function Navbar() {
