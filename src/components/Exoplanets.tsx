@@ -15,7 +15,9 @@ const BASE_URL =
 
 interface Table {
   kepid: number;
-  kepoi_name: string;
+  koi_period: number;
+  koi_duration: number;
+  koi_prad: number;
 }
 
 function GettingExoTables() {
@@ -69,7 +71,8 @@ function GettingExoTables() {
       <br />
       <h1 className="text-center">Exoplanet Data</h1>
 
-      <button onClick={() => setPage(page + 1)}>Next ({page})</button>
+      {/*<button onClick={() => setPage(page + 1)}>Next ({page})</button>*/}
+
       {isLoading && (
         <div>
           Loading<span className="introTextDotOne">.</span>
@@ -83,7 +86,12 @@ function GettingExoTables() {
             <ul>
               {table.map((entry) => (
                 <li key={entry.kepid}>
-                  {entry.kepid} | {entry.kepoi_name}
+                  <span>ID: </span>
+                  {entry.kepid} | <span>Orbital Period: </span>
+                  {entry.koi_period} <span> days</span> !{" "}
+                  <span>Transidion duration:</span> {entry.koi_duration}{" "}
+                  <span> hours</span> | <span>Planetary Radius: </span>{" "}
+                  {entry.koi_prad} <span>Earth Radii </span>
                 </li>
               ))}
             </ul>
