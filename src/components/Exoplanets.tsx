@@ -81,22 +81,25 @@ function GettingExoTables() {
         </div>
       )}
       {!isLoading && (
-        <ul>
-          {table && table.length > 0 && (
-            <ul>
-              {table.map((entry) => (
-                <li key={entry.kepid}>
-                  <span>ID: </span>
-                  {entry.kepid} | <span>Orbital Period: </span>
-                  {entry.koi_period} <span> days</span> !{" "}
-                  <span>Transidion duration:</span> {entry.koi_duration}{" "}
-                  <span> hours</span> | <span>Planetary Radius: </span>{" "}
-                  {entry.koi_prad} <span>Earth Radii </span>
-                </li>
-              ))}
-            </ul>
-          )}
-        </ul>
+        <div>
+          <ul>
+            {table && table.length > 0 && (
+              <ul>
+                {table.map((entry) => (
+                  <li key={entry.kepid}>
+                    <span>ID: </span>
+                    {entry.kepid} | <span>Orbital Period: </span>
+                    {entry.koi_period} <span> days</span> !{" "}
+                    <span>Transidion duration:</span> {entry.koi_duration}{" "}
+                    <span> hours</span> | <span>Planetary Radius: </span>{" "}
+                    {entry.koi_prad} <span>Earth Radii </span>
+                  </li>
+                ))}
+              </ul>
+            )}
+          </ul>
+          <h1>Just adding some text</h1>
+        </div>
       )}
     </div>
   );
