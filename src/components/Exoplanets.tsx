@@ -14,23 +14,19 @@ const BASE_URL =
   "https://exoplanetarchive.ipac.caltech.edu/cgi-bin/nstedAPI/nph-nstedAPI?table=cumulative&format=json";
 
 interface Table {
-  kepid: number;
-  koi_period: number;
-  ra: number; //Right Ascension (deg)
-  dec: number; //Declination (deg)
+  koi_disposition: string; //Confirmed, Candidate, False Positive
+  kepid: number; //kepler ID
+  kepler_name: string; //kepler name
+  ra_str: string; //Right Ascension (deg)
+  dec_str: string; //Declination (deg)
+  koi_period: number; //Orbital period (days)
   koi_kepmag: number; //Kepler-band (mag)
-  koi_gmag: number; //g-band mag
-  koi_duration: number;
-  koi_prad: number;
-  koi_eccen: number;
-  koi_ror: number; //planet/star radius ratio
-  koi_sma: number; //orbit semi-major axis (AU)
-  koi_count: number; //number of planets
+  koi_duration: number; //transit duration (hours)
+  koi_prad: number; // plantary radius (Earth Radii)
+  koi_teq: number; //Approximation for the temperature of the planet. The calculation of equilibrium temperature assumes a) thermodynamic equilibrium between the incident stellar flux and the radiated heat from the planet, b) a Bond albedo (the fraction of total power incident upon the planet scattered back into space) of 0.3, c) the planet and star are blackbodies, and d) the heat is evenly distributed between the day and night sides of the planet.
+  koi_tce_plnt_num: number; //number of planets
   koi_steff: number; //star temperature (K)
-  koi_smet: number; //stellar metallicity (The base-10 logarithm of the Fe to H ratio at the surface of the star, normalized by the solar Fe to H ratio)
-  koi_srad: number; //Star radius in Solar Radii
-  koi_smass: number; //Mass of the star in solar masses
-  koi_sage: number; //stellar age in Gigayears
+  koi_srad: number; //Star radius (Solar Radii)
 }
 
 function GettingExoTables() {
@@ -103,41 +99,35 @@ function GettingExoTables() {
               <ul>
                 {table.map((entry) => (
                   <li key={entry.kepid}>
+                    <span className="dataName">Status: </span>{" "}
+                    {entry.koi_disposition}|{" "}
                     <span className="dataName">ID: </span>
-                    {entry.kepid}| <span className="dataName">RA: </span>{" "}
-                    {entry.ra} <span> deg </span>|{" "}
-                    <span className="dataName">Dec: </span> {entry.dec}{" "}
-                    <span> deg </span>|{" "}
-                    <span className="dataName">Kepler-band: </span>{" "}
-                    {entry.koi_kepmag} <span> mag </span>|{" "}
-                    <span className="dataName">g-band: </span> {entry.koi_gmag}{" "}
-                    <span> mag </span>|{" "}
+                    {entry.kepid}| <span className="dataName">Kep Name: </span>
+                    {entry.kepler_name}| <span className="dataName">RA: </span>{" "}
+                    {entry.ra_str} | <span className="dataName">Dec: </span>{" "}
+                    {entry.dec_str}|{" "}
+                    <span className="dataName">Orbital Period: </span>{" "}
+                    {entry.koi_period} <span> days </span>|{" "}
                     <span className="dataName">Orbital Period: </span>{" "}
                     {entry.koi_period} <span> days </span>|{" "}
                     <span className="dataName">Transition duration:</span>{" "}
                     {entry.koi_duration} <span> hours</span>|{" "}
                     <span className="dataName">Planetary Radius: </span>{" "}
                     {entry.koi_prad} <span> Earth Radii </span>|{" "}
-                    <span className="dataName">Orbit Semi-Major Axis: </span>{" "}
-                    {entry.koi_sma} <span> AU </span>|{" "}
                     <span className="dataName">Eccentricity: </span>{" "}
                     {entry.koi_eccen} <span> </span>|{" "}
                     <span className="dataName">: </span> {entry.koi_prad}{" "}
                     <span> </span>|{" "}
                     <span className="dataName">Planets number: </span>{" "}
-                    {entry.koi_count} <span> </span>|{" "}
+                    {entry.koi_tce_plnt_num} <span> </span>|{" "}
                     <span className="dataName">Planet/Star Radius Ratio: </span>{" "}
                     {entry.koi_ror} <span> </span>|{" "}
                     <span className="dataName">Star Temperature: </span>{" "}
                     {entry.koi_steff} <span> Kelvin </span>|{" "}
                     <span className="dataName">Stellar Metallicity: </span>{" "}
-                    {entry.koi_smet}{" "}
-                    <span>
-                      {" "}
-                      The base-10 logarithm of the Fe to H ratio at the surface
-                      of the star, normalized by the solar Fe to H ratio{" "}
-                    </span>
-                    | <span className="dataName">Star Radius: </span>{" "}
+                    {entry.koi_smet}
+                    <span></span>| {""}{" "}
+                    <span className="dataName">Star Radius: </span>{" "}
                     {entry.koi_srad} <span> Solar Radii </span>|{" "}
                     <span className="dataName">Stellar mass: </span>{" "}
                     {entry.koi_smass} <span> Solar Masses </span>|{" "}
