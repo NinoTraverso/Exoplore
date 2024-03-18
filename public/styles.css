@@ -68,6 +68,14 @@ nav * h2 {
   }
 }
 
+@media screen and (max-width: 420px) {
+  #logoContainer,
+  #logoContainer img {
+    width: 80px;
+    height: auto;
+  }
+}
+
 /*------------------------------------------------------------ HOME PAGE -------------------------------------------------------------*/
 #homePage {
   width: 100%;
