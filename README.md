@@ -1,5 +1,5 @@
 <div align="center">
-  <img height="600" src="/exoplore/public/assets/exoplore.png"  />
+  <img height="600" src="./exoplore/public/assets/exoplore.png"  />
 </div>
 
 ###
