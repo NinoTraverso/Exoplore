@@ -9,21 +9,21 @@ function Navbar() {
   return (
     <div>
       <BrowserRouter>
-        <nav className="d-flex flex-row justify-content-between align-items-center fixed-top">
+        <nav className="d-flex flex-column flex-md-row justify-content-between align-items-center fixed-top">
           <div id="logoContainer" className="m-3">
             <img src="/assets/logoNoBg.png" alt="exoplore-logo" />
           </div>
-          <div className="d-flex flex-row ">
+          <div className="d-flex flex-row">
             <Link to="/Home" className="text-decoration-none mx-4">
               {" "}
-              <h2>Home </h2>
+              <h2 className="smallScreenLinks">Home </h2>
             </Link>
             <Link to="/Exoplanets" className="text-decoration-none mx-4">
               {" "}
-              <h2>Exoplanets </h2>{" "}
+              <h2 className="smallScreenLinks">Exoplanets </h2>{" "}
             </Link>
             <Link to="/Info" className="text-decoration-none mx-4">
-              <h2>Info </h2>{" "}
+              <h2 className="smallScreenLinks">Info </h2>{" "}
             </Link>
           </div>
         </nav>
