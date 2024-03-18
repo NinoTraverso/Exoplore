@@ -310,6 +310,10 @@ background-image: url("/assets/grayPlanet.jpg");
   color: orange;
 }
 
+.loadingHeight {
+  height: 74vh;
+}
+
 /*------------------------------------------------------------ INFO PAGE -------------------------------------------------------------*/
 
 .repoLink > i {

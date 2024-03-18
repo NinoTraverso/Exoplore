@@ -44,7 +44,7 @@ function Home() {
               <div id="exoplanetsExplaination">
                 <h3 id="exoplanetsExplaination" className="my-5">
                   Exoplanets can be subdived into four main categories: Ice
-                  Giants (or Neptunians), Gas Giants, super-Earths and
+                  Giants &#40;or Neptunians&#41;, Gas Giants, super-Earths and
                   terrestrial.
                 </h3>
                 <div id="exoplanetTypes" className="my-5">
@@ -143,7 +143,7 @@ function Home() {
 
                     <h4 id="findingExoplanetsExplanation">
                       Planets which can be detected by observing a star and
-                      "covering" that star in order to view whethere there are
+                      "covering" that star in order to view whether there are
                       orbiting exoplanets, detected by the reflected light.
                     </h4>
                   </div>
@@ -179,49 +179,48 @@ function Home() {
               <div id="sectionFourImageContainer"></div>
               <div className="col-10 col-md-6 flex-wrap text-center">
                 <h3 id="lifeExoplanetsExplanation" className="my-5">
-                  To this day there have been no evidence of the existance of
-                  extraterrestrial life both in our Solar System and exoplanets.
-                  The question though can entail complicated considerations,
-                  questions such as "Is other life like us?", "Are other life
-                  forms as advance, or more advanced than us or is their
-                  technology not advance yet to be detectable?", "If unlike us,
-                  they have advanced technology, would we have the tools and
-                  comprehension for how we can detect them?"
+                  To this day there has been no evidence of the existance of
+                  extraterrestrial life both in our Solar System and on
+                  exoplanets. The question though can entail complicated
+                  considerations, questions such as "Is extraterrestrial life
+                  like us?", "Are other life forms as technologically advanced
+                  as us?".
                 </h3>
                 <h3 id="lifeExoplanetsExplanation" className="my-5">
                   We cannot assume that extraterrestrial life, if any out there,
-                  is like us in any way but rather we should assumed they are
-                  completely different from us, similarly how different animals
-                  on our planet breath, hear and see things differently from us.
+                  is like on our planet in any way but rather we should assume
+                  they are completely different from us, similarly how different
+                  animals on our planet breath, hear and see things differently
+                  from humans.
                 </h3>
                 <h3 id="lifeExoplanetsExplanation" className="my-5">
                   Even if we discovered evidence of some sort of intelligent
                   life form, would we be able to communicate with them? Light
-                  travel's at the fastest speed possible in the Universe,
+                  travels at the fastest speed possible in the Universe,
                   ~300,000 km/s, so even if we detected intelligent life and
-                  were able to send out a message, a planet distan 600-light
-                  years would take that much time to reach the hypothetical
-                  aliens, assuming they are listening for it.
+                  were able to send out a message, a planet distant 600
+                  light-years would take that much time to reach the
+                  hypothetical aliens, assuming they are listening for it.
                 </h3>
                 <h3 id="lifeExoplanetsExplanation" className="my-5">
                   It seems unlikely that we will be able to have direct
                   communication with hypothetical alien beings, although we
-                  could still send out messages for any distant listener, and we
-                  also are tuned for any incoming "space call" that might have
-                  been sent.
+                  could still send out messages for any distant listener, as we
+                  are currently tuned for any incoming "space call" that might
+                  have been sent.
                 </h3>
                 <h3 id="lifeExoplanetsExplanation" className="my-5">
-                  Water is though to be the "universal" soluble for many reasons
-                  - because of this, we are looking, among exoplanets, those in
-                  the habitable zone, thought to be ideal for water to exist in
-                  it's liquid form. Althogh other factors come in play for water
-                  to exist in its liquid form &#40; a planet's albedo,
-                  atmospheric composition, cloud presence, tidal heating,
-                  primordial heating, green house gases, internal radioactive
-                  decay... &#4; there is no reason to observe possible
-                  Earth-like exoplanets and determine its habitability and
-                  whether there is presence of biomakers &#40;such as ozone
-                  -O3&#41;.
+                  Water is thought to be the universal solvent for many reasons,
+                  and it's considered the best solvent for organic chemical
+                  reactions. For this reason, we are looking among exoplanets
+                  for those in the habitable zone. However, liquid water and
+                  whether an exoplanet is within the habitable zone are not the
+                  only factors in determining the potential for life to develop.
+                  Other factors, such as a planet's albedo, atmospheric
+                  composition, cloud presence, tidal heating, primordial
+                  heating, greenhouse gases, and internal radioactive decay,
+                  also play a significant role in determining whether water
+                  could exist in its liquid form.
                 </h3>
               </div>
             </div>

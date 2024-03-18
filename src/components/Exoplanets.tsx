@@ -81,19 +81,22 @@ function GettingExoTables() {
       <br />
       <br />
       <br />
-      <h1 className="text-center">Exoplanet Data</h1>
+      <br />
 
       {/*<button onClick={() => setPage(page + 1)}>Next ({page})</button>*/}
 
       {isLoading && (
-        <div>
-          Loading<span className="introTextDotOne">.</span>
-          <span className="introTextDotTwo">.</span>
-          <span className="introTextDotThree">.</span>
+        <div className="loadingHeight text-center d-flex align-items-center justify-content-center">
+          <h1>
+            Loading<span className="introTextDotOne">.</span>
+            <span className="introTextDotTwo">.</span>
+            <span className="introTextDotThree">.</span>
+          </h1>
         </div>
       )}
       {!isLoading && (
         <div>
+          <h1 className="text-center border-bottom bg-light">Exoplanets</h1>
           <ul>
             {table && table.length > 0 && (
               <ul>
@@ -132,7 +135,6 @@ function GettingExoTables() {
               </ul>
             )}
           </ul>
-          <h1>Just adding some text</h1>
         </div>
       )}
     </div>
