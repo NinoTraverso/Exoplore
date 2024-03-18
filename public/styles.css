@@ -306,6 +306,10 @@ background-image: url("/assets/grayPlanet.jpg");
   animation-iteration-count: infinite;
 }
 
+.dataName {
+  color: orange;
+}
+
 /*------------------------------------------------------------ INFO PAGE -------------------------------------------------------------*/
 
 .repoLink > i {
