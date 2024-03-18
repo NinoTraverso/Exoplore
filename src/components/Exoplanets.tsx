@@ -19,8 +19,8 @@ interface Table {
   kepler_name: string; //kepler name
   ra_str: string; //Right Ascension (deg)
   dec_str: string; //Declination (deg)
-  koi_period: number; //Orbital period (days)
   koi_kepmag: number; //Kepler-band (mag)
+  koi_period: number; //Orbital period (days)
   koi_duration: number; //transit duration (hours)
   koi_prad: number; // plantary radius (Earth Radii)
   koi_teq: number; //Approximation for the temperature of the planet. The calculation of equilibrium temperature assumes a) thermodynamic equilibrium between the incident stellar flux and the radiated heat from the planet, b) a Bond albedo (the fraction of total power incident upon the planet scattered back into space) of 0.3, c) the planet and star are blackbodies, and d) the heat is evenly distributed between the day and night sides of the planet.
@@ -100,39 +100,33 @@ function GettingExoTables() {
                 {table.map((entry) => (
                   <li key={entry.kepid}>
                     <span className="dataName">Status: </span>{" "}
-                    {entry.koi_disposition}|{" "}
-                    <span className="dataName">ID: </span>
-                    {entry.kepid}| <span className="dataName">Kep Name: </span>
-                    {entry.kepler_name}| <span className="dataName">RA: </span>{" "}
-                    {entry.ra_str} | <span className="dataName">Dec: </span>{" "}
-                    {entry.dec_str}|{" "}
-                    <span className="dataName">Orbital Period: </span>{" "}
-                    {entry.koi_period} <span> days </span>|{" "}
-                    <span className="dataName">Orbital Period: </span>{" "}
-                    {entry.koi_period} <span> days </span>|{" "}
+                    {entry.koi_disposition}
+                    {""}&#59; <span className="dataName">ID: </span>
+                    {entry.kepid} {""}&#59;{" "}
+                    <span className="dataName">Kep Name: </span>
+                    {entry.kepler_name}
+                    {""}&#59; <span className="dataName">RA: </span>{" "}
+                    {entry.ra_str} {""}&#59;{" "}
+                    <span className="dataName">Dec: </span> {entry.dec_str} {""}
+                    &#59; <span className="dataName">Magnitude: </span>{" "}
+                    {entry.koi_kepmag}
+                    {""}&#59; <span className="dataName">Orbital Period: </span>{" "}
+                    {entry.koi_period} <span> &#40;days&#41; </span>
+                    {""}&#59;{" "}
                     <span className="dataName">Transition duration:</span>{" "}
-                    {entry.koi_duration} <span> hours</span>|{" "}
+                    {entry.koi_duration} <span> &#40;hours&#41;</span>
+                    {""}&#59;{" "}
                     <span className="dataName">Planetary Radius: </span>{" "}
-                    {entry.koi_prad} <span> Earth Radii </span>|{" "}
-                    <span className="dataName">Eccentricity: </span>{" "}
-                    {entry.koi_eccen} <span> </span>|{" "}
-                    <span className="dataName">: </span> {entry.koi_prad}{" "}
-                    <span> </span>|{" "}
-                    <span className="dataName">Planets number: </span>{" "}
-                    {entry.koi_tce_plnt_num} <span> </span>|{" "}
-                    <span className="dataName">Planet/Star Radius Ratio: </span>{" "}
-                    {entry.koi_ror} <span> </span>|{" "}
+                    {entry.koi_prad} <span> &#40;Earth Radii&#41; </span>
+                    {""}&#59; <span className="dataName"> ~T of Planet: </span>{" "}
+                    {entry.koi_teq} <span> &#40;K&#41; </span>
+                    {""}&#59; <span className="dataName">Planets number: </span>{" "}
+                    {entry.koi_tce_plnt_num}
+                    {""}&#59;{" "}
                     <span className="dataName">Star Temperature: </span>{" "}
-                    {entry.koi_steff} <span> Kelvin </span>|{" "}
-                    <span className="dataName">Stellar Metallicity: </span>{" "}
-                    {entry.koi_smet}
-                    <span></span>| {""}{" "}
-                    <span className="dataName">Star Radius: </span>{" "}
-                    {entry.koi_srad} <span> Solar Radii </span>|{" "}
-                    <span className="dataName">Stellar mass: </span>{" "}
-                    {entry.koi_smass} <span> Solar Masses </span>|{" "}
-                    <span className="dataName">Stellar Age: </span>{" "}
-                    {entry.koi_sage} <span> Gigayears </span>
+                    {entry.koi_steff} <span> &#40;K&#41; </span>
+                    {""}&#59; <span className="dataName">Star Radius: </span>{" "}
+                    {entry.koi_srad} <span> &#40;Solar Radii&#41; </span>
                   </li>
                 ))}
               </ul>
