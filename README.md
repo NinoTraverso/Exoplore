@@ -1,5 +1,5 @@
 <div align="center">
-  <img height="600" src="./exoplore/public/assets/exoplore.png"  />![exoplore](https://github.com/NinoTraverso/Exoplore/assets/134203980/f78aa331-eb7a-456d-9a4d-88eca7fc7f41)
+  <img height="600" src="./exoplore/public/assets/exoplore.png"  />
 
 </div>
 
