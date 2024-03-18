@@ -1,6 +1,14 @@
 <div align="center">
-  <img height="600" src="https://ibb.co/41HrvR2"  />
+  <img height="600" src="/exoplore/public/assets/exoplore.png"  />
 </div>
+
+###
+
+<h3 align="left">Project Info</h3>
+
+###
+
+<p align="left">For this project I wanted to try out NASA's exoplanet API and implement it using React into this project to have a list of all exoplanets. <br><br>In the future I would like to implement a search feature for the IDs, and also a filtering function for better UX.</p>
 
 ###
 
@@ -26,6 +34,8 @@
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" height="40" alt="typescript logo"  />
   <img width="12" />
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" height="40" alt="react logo"  />
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" height="40" alt="vscode logo"  />
 </div>
 
 ###
