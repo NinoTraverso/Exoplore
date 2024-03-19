@@ -1,9 +1,3 @@
-<div align="center">
-  <img height="600" src="./exoplore/public/assets/exoplore.png"  />
-</div>
-
-###
-
 <h3 align="left">Project Info</h3>
 
 ###
